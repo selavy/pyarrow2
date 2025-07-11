@@ -45,6 +45,13 @@ print(t2)
 t2["b"] = t2("a") * t2("x")
 print(t2)
 
+x2 = t2("x") + t2("x")
+x4 = x2 + x2
+t2["x4_v1"] = x4
+t2["x4_v2"] = t2("x") * 4
+print(t2)
+
+
 # expr = pc.field("x") + pc.field("y")
 #
 # t2["a"] = expr
